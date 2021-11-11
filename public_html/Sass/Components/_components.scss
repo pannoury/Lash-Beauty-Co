@@ -1,0 +1,114 @@
+//Navbar
+header{
+    padding: 0px 10px;
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .navbar-logo{
+            margin-left: 10vw;
+        }
+        #navbar-list-desktop{
+            ul{
+                @media(min-width:1000px){
+                    display: flex;
+                }
+                @media(max-width:1000px){
+                    display: none;
+                }
+                flex-direction: row;
+                padding: 0;
+                list-style: none;
+                .nav-list{
+                    text-transform: uppercase;
+                    &:not(:last-child){
+                        margin-right: 2vw;
+                    }
+                }
+            }
+
+        }
+        #navbar-list-mobile{
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            height: 100vh;
+            width: 0vw;
+            background-color: #ba7b62;
+            transition: 0.5s width ease-out;
+            &[aria-label="untoggled"]{
+                width: 0vw;
+                padding: 0;
+            }
+            &[aria-label="toggled"]{
+                padding: 0 20px;
+                width: calc(100vw - 40px);
+                z-index: 8;
+            }
+            ul{
+                flex-direction: column;
+                padding: 0;
+                margin-top: 103px;
+                list-style: none;
+                .nav-list{
+                    text-transform: uppercase;
+                    color: #fff;
+                    font-size: 30px;
+                    &:not(:last-child){
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        #nav-hamburger{
+            z-index: 10;
+            @media(min-width:1000px){
+                display: none;
+            }
+            @media(max-width:1000px){
+                position: absolute;
+                right: 10%;
+            }
+            &[aria-label="untoggled"]{
+                svg{
+                    fill: #ba7b62;
+                }
+            }
+            &[aria-label="toggled"]{
+                svg{
+                    fill: #fff;
+                }
+            }
+        }
+
+    }
+}
+footer{
+    background-color: #ba7b62;
+    #footer{
+        padding: 0 20px;
+        display: flex;
+        @media(min-width:1000px){
+            flex-direction: row;
+        }
+        @media(max-width:1000px){
+            flex-direction: column;
+        }
+        .footer-row{
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            .navbar.logo{
+                img{
+                    fill: #fff;
+                }
+            }
+        }
+        p{
+            color: #fff;
+        }
+    }
+
+}
+//Navbar End

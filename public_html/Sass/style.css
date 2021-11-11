@@ -1,0 +1,125 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.hover:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+header {
+  padding: 0px 10px;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .navbar-logo {
+  margin-left: 10vw;
+}
+header nav #navbar-list-desktop ul {
+  flex-direction: row;
+  padding: 0;
+  list-style: none;
+}
+@media (min-width: 1000px) {
+  header nav #navbar-list-desktop ul {
+    display: flex;
+  }
+}
+@media (max-width: 1000px) {
+  header nav #navbar-list-desktop ul {
+    display: none;
+  }
+}
+header nav #navbar-list-desktop ul .nav-list {
+  text-transform: uppercase;
+}
+header nav #navbar-list-desktop ul .nav-list:not(:last-child) {
+  margin-right: 2vw;
+}
+header nav #navbar-list-mobile {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  height: 100vh;
+  width: 0vw;
+  background-color: #ba7b62;
+  transition: 0.5s width ease-out;
+}
+header nav #navbar-list-mobile[aria-label=untoggled] {
+  width: 0vw;
+  padding: 0;
+}
+header nav #navbar-list-mobile[aria-label=toggled] {
+  padding: 0 20px;
+  width: calc(100vw - 40px);
+  z-index: 8;
+}
+header nav #navbar-list-mobile ul {
+  flex-direction: column;
+  padding: 0;
+  margin-top: 103px;
+  list-style: none;
+}
+header nav #navbar-list-mobile ul .nav-list {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 30px;
+}
+header nav #navbar-list-mobile ul .nav-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+header nav #nav-hamburger {
+  z-index: 10;
+}
+@media (min-width: 1000px) {
+  header nav #nav-hamburger {
+    display: none;
+  }
+}
+@media (max-width: 1000px) {
+  header nav #nav-hamburger {
+    position: absolute;
+    right: 10%;
+  }
+}
+header nav #nav-hamburger[aria-label=untoggled] svg {
+  fill: #ba7b62;
+}
+header nav #nav-hamburger[aria-label=toggled] svg {
+  fill: #fff;
+}
+
+footer {
+  background-color: #ba7b62;
+}
+footer #footer {
+  padding: 0 20px;
+  display: flex;
+}
+@media (min-width: 1000px) {
+  footer #footer {
+    flex-direction: row;
+  }
+}
+@media (max-width: 1000px) {
+  footer #footer {
+    flex-direction: column;
+  }
+}
+footer #footer .footer-row {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+footer #footer .footer-row .navbar.logo img {
+  fill: #fff;
+}
+footer #footer p {
+  color: #fff;
+}/*# sourceMappingURL=style.css.map */
