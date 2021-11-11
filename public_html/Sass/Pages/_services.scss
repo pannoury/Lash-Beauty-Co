@@ -1,0 +1,107 @@
+main{
+    #price-list-wrapper{
+        .price-list-header{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                padding: 14px 24px;
+                font-size: 12px;
+                border-radius: 8px;
+                border: none;
+                background-color: $brown;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+        .category{
+            margin-bottom: 4px;
+            &[aria-label="extended"]{
+                .category_header{
+                    span{
+                        background-color: $brown1;
+                    }
+                }
+            }
+            &[aria-label="collapsed"]{
+                .category_header{
+                    span{
+                        background-color: #d4d4d4;
+                        svg{
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+                .category_extended_list{
+                    display: none;
+                }
+            }
+            .category_header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                background-color: $brown;
+                padding: 8px;
+                border-radius: 6px;
+                p{
+                    font-weight: bold;
+                    font-size: 16px;
+                    margin: 0;
+                }
+                span{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 4px;
+                    border-radius: 50%;
+                    svg{
+                        transition: 0.5s transform ease;
+                    }
+                }
+            }
+            .category_extended_list{
+                ul{
+                    list-style-type: none;
+                    li{
+                        border-top: 1px solid #d4d4d4;
+                        width: 95%;
+                        margin: auto;
+                        padding: 12px 0;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        align-items: center;
+                        &:nth-last-child(1){
+                            border-bottom: 1px solid #d4d4d4;
+                        }
+                        .service-description{
+                            display: flex;
+                            flex-direction: column;
+                            p{
+                                margin: 4px 0;
+                            }
+                            .service-description-type1{
+                                font-weight: 600;
+                            }
+                        }
+                        .book_btn{
+                            padding: 14px 24px;
+                            font-size: 12px;
+                            border-radius: 8px;
+                            border: none;
+                            background-color: $brown;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            &:hover{
+                                cursor: pointer;
+                                background-color: $brown2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

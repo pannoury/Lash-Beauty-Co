@@ -1,4 +1,15 @@
 //Navbar
+@media(max-width:1000px){
+    header{
+        position: fixed;
+        width: 100vw;
+        background-color: #fff;
+        z-index: 8;
+    }
+    main{
+        padding-top: 104px;
+    }
+}
 header{
     padding: 0px 10px;
     nav{
@@ -85,6 +96,9 @@ header{
 
     }
 }
+//Navbar End
+
+//Footer
 footer{
     background-color: #ba7b62;
     #footer{
@@ -100,9 +114,47 @@ footer{
             display: flex;
             flex-direction: column;
             color: #fff;
+            h4{
+                margin: 0 0 10px 0;
+                font-size: 24px;
+            }
             .navbar.logo{
                 img{
                     fill: #fff;
+                }
+            }
+            ul{
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                li{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 6px 0;
+                    svg{
+                        fill: #fff;
+                    }
+                    a{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .social-media{
+            h4{
+                margin: 10px 0;
+                font-size: 24px;
+                color: #fff;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                color: #fff;
+                svg{
+                    margin-right: 10px;
+                    width: 24px;
+                    height: 24px;
                 }
             }
         }
@@ -112,4 +164,3 @@ footer{
     }
 
 }
-//Navbar End
