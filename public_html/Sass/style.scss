@@ -51,7 +51,13 @@ $brown1: #cf8e74;
 $brown2: #b86747;
 $main0: #b068a8; //navbar & footer background color *Main Color*
 $main1: #d47fcb; //light main
+$main10: #d492ceb9;
+$main12: #f8c4f3;
 $main2: #94498b; //dark main
+$main20: #d492ceb9;
+$main22: #53275062;
+$main30: #261536;
+$main32: #4e2f6b;
 $text0: #fff; //light color text
 $text1: #000; //dark color text
 
@@ -82,7 +88,6 @@ main{
         min-height: calc(100vh - 74px - 316px);
         padding-top: 74px;
     }
-    margin-bottom: 10px
 }
 
 @import './Components/components';
