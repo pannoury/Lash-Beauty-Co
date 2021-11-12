@@ -1,34 +1,69 @@
 //Navbar
+@media(min-width:1000px){
+    header{
+        nav{
+            flex-direction: column;
+            .navbar-logo{
+                #navbar_logo{
+                    width: 150px;
+                    height: 50px;
+                }
+            }
+            #navbar-list-desktop{
+                ul{
+                    display: flex;
+                    li{
+                        color: $text0;
+                    }
+                }
+            }
+            #nav-hamburger{
+                display: none;
+            }
+        }
+    }
+}
 @media(max-width:1000px){
     header{
         position: fixed;
-        width: 100vw;
-        background-color: #fff;
+        width: calc(100vw - 20px);
         z-index: 8;
-    }
-    main{
-        padding-top: 104px;
+        nav{
+            flex-direction: row;
+            .navbar-logo{
+                margin-left: calc(50vw - 50px);
+                z-index: 10;
+                #navbar_logo{
+                    height: 50px;
+                    width: 100px;
+                }
+            }
+            #navbar-list-desktop{
+                ul{
+                    display: none;
+                }
+            }
+            #nav-hamburger{
+                z-index: 10;
+                position: absolute;
+                left: 10%;
+                svg{
+                    fill: $text0;
+                }
+            }
+        }
     }
 }
 header{
+    background-color: $main0;
     padding: 0px 10px;
     nav{
         display: flex;
-        flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        .navbar-logo{
-            margin-left: 10vw;
-            z-index: 10;
-        }
+        padding: 10px 0;
         #navbar-list-desktop{
             ul{
-                @media(min-width:1000px){
-                    display: flex;
-                }
-                @media(max-width:1000px){
-                    display: none;
-                }
                 flex-direction: row;
                 padding: 0;
                 list-style: none;
@@ -47,7 +82,7 @@ header{
             right: 0%;
             height: 100vh;
             width: 0vw;
-            background-color: #ba7b62;
+            background-color: $main0;
             transition: 0.5s width ease-out;
             &[aria-label="untoggled"]{
                 width: 0vw;
@@ -65,7 +100,7 @@ header{
                 list-style: none;
                 .nav-list{
                     text-transform: uppercase;
-                    color: #fff;
+                    color: $text0;
                     font-size: 30px;
                     &:not(:last-child){
                         margin-bottom: 20px;
@@ -73,54 +108,59 @@ header{
                 }
             }
         }
-        #nav-hamburger{
-            z-index: 10;
-            @media(min-width:1000px){
-                display: none;
-            }
-            @media(max-width:1000px){
-                position: absolute;
-                right: 10%;
-            }
-            &[aria-label="untoggled"]{
-                svg{
-                    fill: #ba7b62;
-                }
-            }
-            &[aria-label="toggled"]{
-                svg{
-                    fill: #fff;
-                }
-            }
-        }
-
     }
 }
 //Navbar End
 
 //Footer
+@media(min-width:1000px){
+    #footer{
+        flex-direction: row;
+    }
+}
+@media(max-width:1000px){
+    #footer{
+        flex-direction: column;
+        .footer-row, .social-media{
+            h4{
+                margin: 0;
+                font-size: 24px;
+                text-align: center;
+                position: relative;
+                color: $text0;
+                &::before, &::after{
+                    position: absolute;
+                    top: 51%;
+                    overflow: hidden;
+                    width: 50%;
+                    height: 1px;
+                    content: '\a0';
+                    background-color: $text0;
+                }
+                &::before{
+                    margin-left: -50%;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
 footer{
-    background-color: #ba7b62;
+    background-color: $main0;
+    overflow: hidden;
     #footer{
         padding: 0 20px;
         display: flex;
-        @media(min-width:1000px){
-            flex-direction: row;
-        }
-        @media(max-width:1000px){
-            flex-direction: column;
-        }
         .footer-row{
             display: flex;
             flex-direction: column;
-            color: #fff;
-            h4{
-                margin: 0 0 10px 0;
-                font-size: 24px;
+            color: $text0;
+            &:nth-child(1){
+                margin-top: 10px;
             }
             .navbar.logo{
                 img{
-                    fill: #fff;
+                    fill: $text0;
                 }
             }
             ul{
@@ -133,7 +173,7 @@ footer{
                     align-items: center;
                     margin: 6px 0;
                     svg{
-                        fill: #fff;
+                        fill: $text0;
                     }
                     a{
                         margin-left: 10px;
@@ -142,15 +182,10 @@ footer{
             }
         }
         .social-media{
-            h4{
-                margin: 10px 0;
-                font-size: 24px;
-                color: #fff;
-            }
             a{
                 display: flex;
                 align-items: center;
-                color: #fff;
+                color: $text0;
                 svg{
                     margin-right: 10px;
                     width: 24px;
@@ -159,7 +194,7 @@ footer{
             }
         }
         p{
-            color: #fff;
+            color: $text0;
         }
     }
 

@@ -10,7 +10,7 @@ main{
                 font-size: 12px;
                 border-radius: 8px;
                 border: none;
-                background-color: $brown;
+                background-color: $main0;
                 text-transform: uppercase;
                 font-weight: bold;
             }
@@ -20,7 +20,7 @@ main{
             &[aria-label="extended"]{
                 .category_header{
                     span{
-                        background-color: $brown1;
+                        background-color: $main1;
                     }
                 }
             }
@@ -42,7 +42,7 @@ main{
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
-                background-color: $brown;
+                background-color: $main0;
                 padding: 8px;
                 border-radius: 6px;
                 p{
@@ -91,12 +91,12 @@ main{
                             font-size: 12px;
                             border-radius: 8px;
                             border: none;
-                            background-color: $brown;
+                            background-color: $main0;
                             text-transform: uppercase;
                             font-weight: bold;
                             &:hover{
                                 cursor: pointer;
-                                background-color: $brown2;
+                                background-color: $main2;
                             }
                         }
                     }

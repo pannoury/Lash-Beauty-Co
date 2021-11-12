@@ -15,9 +15,6 @@ function systemSettings(){
             hamburger.setAttribute('aria-label', 'toggled')
             hamburger.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 0 24 24" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M18.3 5.71c-.39-.39-1.02-.39-1.41 0L12 10.59 7.11 5.7c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41L10.59 12 5.7 16.89c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0L12 13.41l4.89 4.89c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/></svg>`
             mobileNav.setAttribute('aria-label', 'toggled')
-            setTimeout(() => {
-                document.getElementById('navbar_logo').setAttribute('src', './Assets/Lash Beauty & Co white.svg')
-            }, 300);
         }
         else{
             setTimeout(() => {
@@ -25,7 +22,6 @@ function systemSettings(){
             }, 400);
             hamburger.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg>`
             mobileNav.setAttribute('aria-label', 'untoggled')
-            document.getElementById('navbar_logo').setAttribute('src', './Assets/Lash Beauty & Co.svg')
         }
     }
 }
@@ -35,8 +31,8 @@ function loadNavbar(){
     header.innerHTML = 
     `
     <nav>
-        <a class="navbar-logo hover" href="https://lashbeautyco.se"><img id="navbar_logo" src="./Assets/Lash Beauty & Co.svg" width="120px" height="100px"></a>
         <a id="nav-hamburger" class="hover" aria-label="untoggled"><svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></a>
+        <a class="navbar-logo hover" href="https://lashbeautyco.se"><img id="navbar_logo" src="./Assets/logo-alt-1.svg"></a>
         <div id="navbar-list-desktop">
             <ul>
                 <li class="nav-list"><a class="hover">Tidsbokning</a></li>
@@ -66,11 +62,9 @@ function loadFooter(){
     footer.innerHTML = 
     `
     <div id="footer">
-        <div class="footer-row"><a class="navbar-logo hover" href="https://lashbeautyco.se/"><img src="./Assets/Lash Beauty & Co white.svg" width="120px" height="100px"></a></div>
+        <div class="footer-row"><a class="navbar-logo hover" href="https://lashbeautyco.se/"><img src="./Assets/logo-alt-1.svg" width="100px" height="50px"></a></div>
         <div class="footer-row">
             <h4>Kontakta Oss</h4>
-        </div>
-        <div class="footer-row">
             <div>
                 <ul>
                     <li>
@@ -118,7 +112,6 @@ function loadFooter(){
                     c-0.1-2.1,1.7-3.7,3.5-3.8c2.4-0.1,4,1.8,4.1,3.7C66.8,20.2,65.3,22.1,62.9,22.1z"/>
             </g>
             </svg>
-            @lashbeautyandco
             </a>
         </div>
         <p>© 2021 - Lash Beauty & Co</p>

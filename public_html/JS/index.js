@@ -28,9 +28,15 @@ function indexFunctions(){
     function slider(event){
         if(event === undefined){
             var sliderButtons = document.querySelectorAll('.slider-buttons');
+            var slideTrackerBtn = document.querySelectorAll('.slide-tracker-btn')
             for(let i=0; i<sliderButtons.length; i++){
                 sliderButtons[i].addEventListener('click', function(){
                     slider(sliderButtons[i]);
+                })
+            }
+            for(let i=0; i<slideTrackerBtn.length; i++){
+                slideTrackerBtn[i].addEventListener('click', function(){
+                    slideButtonClick(slideTrackerBtn[i]);
                 })
             }
         }
@@ -42,31 +48,46 @@ function indexFunctions(){
             if(button === "right"){
                 if(carouselPosition === "1"){
                     sliderWrapper.setAttribute('aria-label', '2')
-                    slideTrackerBtn[1].innerHTML = ``
+                    slideButton(2);
                 }
                 else if(carouselPosition === "2"){
                     sliderWrapper.setAttribute('aria-label', '3')
+                    slideButton(3);
                 }
                 else{
                     sliderWrapper.setAttribute('aria-label', '1')
+                    slideButton(1);
                 }
             }
             else{
                 if(carouselPosition === "1"){
                     sliderWrapper.setAttribute('aria-label', '3')
+                    slideButton(3);
                 }
                 else if(carouselPosition === "3"){
                     sliderWrapper.setAttribute('aria-label', '2')
+                    slideButton(2);
                 }
                 else{
                     sliderWrapper.setAttribute('aria-label', '1')
+                    slideButton(1);
                 }
             }
-
-            function slideButton(){
-                
-            }
         }
+    }
+
+    function slideButtonClick(event){
+        var btn = event.getAttribute('aria-label');
+        slideButton(parseInt(btn))
+        document.querySelectorAll('.slider-wrapper')[0].setAttribute('aria-label', `${btn}`)
+    }
+
+    function slideButton(value){
+        var slideTrackerBtn = document.querySelectorAll('.slide-tracker-btn')
+        for(let i=0; i<slideTrackerBtn.length; i++){
+            slideTrackerBtn[i].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/></svg>`
+        }
+        slideTrackerBtn[value - 1].innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M12,2C6.47,2,2,6.47,2,12s4.47,10,10,10s10-4.47,10-10S17.53,2,12,2z"/></g></g></svg>`
     }
 }
 
