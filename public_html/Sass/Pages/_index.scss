@@ -83,6 +83,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: center;
             .column-rating{
                 display: flex;
                 flex-direction: column;
@@ -97,6 +98,29 @@
                 img{
                     width: 150px;
                     height: 30px;
+                }
+            }
+        }
+        .call-to-action-index{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h4{
+                font-size: 24px;
+                font-weight: 600;
+                margin: 0 0 6px 0;
+            }
+            .call-to-action-btn{
+                background-color: $main0;
+                width: 50%;
+                padding: 10px;
+                text-align: center;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 16px;
+                &:hover{
+                    background-color: $main2;
+                    cursor: pointer;
                 }
             }
         }
