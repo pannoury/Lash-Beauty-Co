@@ -182,8 +182,13 @@
             display: flex;
             position: relative;
             height: 600px;
+            &:hover{
+                .slider-button{
+                    display: flex;
+                }
+            }
             .slider-button{
-                display: flex;
+                display: none;
                 flex-direction: row;
                 align-items: center;
                 justify-content: space-between;

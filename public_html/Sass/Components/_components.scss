@@ -95,7 +95,7 @@ header{
         #navbar-list-mobile{
             position: fixed;
             top: 0%;
-            right: 0%;
+            left: 0%;
             height: 100vh;
             width: 0vw;
             background-color: $main0;
@@ -103,6 +103,9 @@ header{
             &[aria-label="untoggled"]{
                 width: 0vw;
                 padding: 0;
+                ul{
+                    display: none;
+                }
             }
             &[aria-label="toggled"]{
                 padding: 0 20px;

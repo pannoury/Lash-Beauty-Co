@@ -8,7 +8,6 @@ function systemSettings(){
 
     function hamburgerEventListener(){
         var hamburger = document.getElementById('nav-hamburger')
-        console.log("tja")
         var toggled = hamburger.getAttribute('aria-label');
         var mobileNav = document.getElementById('navbar-list-mobile')
         if(toggled == "untoggled"){
