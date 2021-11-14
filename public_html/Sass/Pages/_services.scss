@@ -1,5 +1,16 @@
 @media(min-width:1000px){
     #services{
+        .service-call{
+            flex-direction: row;
+            .service-call-section{
+                &:nth-child(1){
+                    width: calc(40% - 20px);
+                }
+                &:nth-last-child(1){
+                    width: calc(60% - 20px);
+                }
+            }
+        }
         #price-list-wrapper{
             width: 95%;
             max-width: 1200px;
@@ -115,14 +126,21 @@
             }
         }
     }
-    #services{
-        .service-call{
-            flex-direction: row;
-        }
-    }
 }
 @media(max-width:1000px){
     #services{
+        .service-call{
+            flex-direction: column;
+            .service-call-section{
+                &:nth-child(1){
+                    width: 100%;
+                    height: 20vh;
+                }
+                &:nth-last-child(1){
+                    width: 100%;
+                }
+            }
+        }
         #price-list-wrapper{
             width: 95vw;
             margin: auto;
@@ -236,11 +254,6 @@
                 }
             }
         }
-        #services{
-            .service-call{
-                flex-direction: column;
-            }
-        }
     }
 }
 
@@ -250,13 +263,11 @@
         .service-call-section{
             padding: 30px 10px;
             &:nth-child(1){
-                width: calc(40% - 20px);
                 background-image: url("https://images.pexels.com/photos/212236/pexels-photo-212236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
                 background-size: cover;
             }
             &:nth-last-child(1){
                 background-color: $main30;
-                width: calc(60% - 20px);
                 display: flex;
                 flex-direction: column;
                 align-items: center;

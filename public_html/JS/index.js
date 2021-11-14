@@ -137,6 +137,8 @@ function indexFunctions(){
 //SERVICES                                             //
 ////////////////////////////////////////////////////////
 function servicesFunctions(){
+    bookingBtn();
+    
     var categories = document.querySelectorAll('.category_header');
     for(let i = 0; i<categories.length; i++){
         categories[i].addEventListener('click', function(){
@@ -151,6 +153,15 @@ function servicesFunctions(){
         }
         else{
             event.parentElement.setAttribute('aria-label', 'extended');
+        }
+    }
+
+    function bookingBtn(){
+        var bookingBtns = document.querySelectorAll('.book_btn');
+        for(let i=0; i<bookingBtns.length; i++){
+            bookingBtns[i].addEventListener('click', function(){
+                window.location = "https://www.bokadirekt.se/places/lash-beauty-%26-co-35083"
+            })
         }
     }
 }

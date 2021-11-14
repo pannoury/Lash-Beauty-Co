@@ -977,6 +977,15 @@ footer .copyright p {
   }
 }
 @media (min-width: 1000px) {
+  #services .service-call {
+    flex-direction: row;
+  }
+  #services .service-call .service-call-section:nth-child(1) {
+    width: calc(40% - 20px);
+  }
+  #services .service-call .service-call-section:nth-last-child(1) {
+    width: calc(60% - 20px);
+  }
   #services #price-list-wrapper {
     width: 95%;
     max-width: 1200px;
@@ -1081,12 +1090,18 @@ footer .copyright p {
     cursor: pointer;
     background-color: #94498b;
   }
-
-  #services .service-call {
-    flex-direction: row;
-  }
 }
 @media (max-width: 1000px) {
+  #services .service-call {
+    flex-direction: column;
+  }
+  #services .service-call .service-call-section:nth-child(1) {
+    width: 100%;
+    height: 20vh;
+  }
+  #services .service-call .service-call-section:nth-last-child(1) {
+    width: 100%;
+  }
   #services #price-list-wrapper {
     width: 95vw;
     margin: auto;
@@ -1190,9 +1205,6 @@ footer .copyright p {
     cursor: pointer;
     background-color: #94498b;
   }
-  #services #services .service-call {
-    flex-direction: column;
-  }
 }
 #services .service-call {
   display: flex;
@@ -1201,13 +1213,11 @@ footer .copyright p {
   padding: 30px 10px;
 }
 #services .service-call .service-call-section:nth-child(1) {
-  width: calc(40% - 20px);
   background-image: url("https://images.pexels.com/photos/212236/pexels-photo-212236.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-size: cover;
 }
 #services .service-call .service-call-section:nth-last-child(1) {
   background-color: #261536;
-  width: calc(60% - 20px);
   display: flex;
   flex-direction: column;
   align-items: center;
