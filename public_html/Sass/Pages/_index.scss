@@ -85,7 +85,7 @@
             justify-content: space-between;
             align-items: center;
             background-color: $main1;
-            color: $text0;
+            color: $text1;
             padding: 10px;
             .column-rating{
                 display: flex;
@@ -163,7 +163,7 @@
                         button{
                             background-color: $main0;
                             font-size: 18px;
-                            color: $text0;
+                            color: $text1;
                             padding: 6px 22px;
                             border-radius: 3px;
                             border: none;
@@ -268,7 +268,7 @@
             flex-direction: row;
             margin: auto;
             background-color: $main1;
-            color: $text0;
+            color: $text1;
             margin-bottom: 0;
             .column-rating{
                 display: flex;
@@ -297,7 +297,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-items: center;
-                color: $text0;
+                color: $text1;
                 h4{
                     font-size: 28px;
                     font-weight: 500;
@@ -422,7 +422,7 @@
                 button{
                     background-color: $main0;
                     font-size: 18px;
-                    color: $text0;
+                    color: $text1;
                     padding: 6px 22px;
                     border-radius: 3px;
                     border: none;
@@ -443,7 +443,7 @@
             flex-direction: column;
             align-items: center;
             justify-items: center;
-            color: $text0;
+            color: $text1;
             h4{
                 font-size: 28px;
                 font-weight: 500;

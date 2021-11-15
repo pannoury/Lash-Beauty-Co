@@ -31,25 +31,27 @@ function loadNavbar(){
     `
     <nav>
         <a id="nav-hamburger" class="hover" aria-label="untoggled"><svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></a>
-        <a class="navbar-logo hover" href="https://lashbeautyco.se"><img id="navbar_logo" src="./Assets/logo-alt-1.svg"></a>
+        <a class="navbar-logo hover" href="https://lashbeautyco.se">
+            <img id="navbar_logo" src="./Assets/logo-alt-1.svg">
+        </a>
         <div id="navbar-list-desktop">
             <ul>
-                <li class="nav-list"><a class="hover">Tidsbokning</a></li>
-                <li class="nav-list"><a class="hover">Tjänster</a></li>
-                <li class="nav-list"><a class="hover">Bildgalleri</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/services">Prislista</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/contact">Kontakta oss</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/about">Om oss</a></li>
+                <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
+                <li class="nav-list"><a class="hover nav-link" data-index="Tjänster">Tjänster</a></li>
+                <li class="nav-list"><a class="hover nav-link" data-index="Bildgalleri">Bildgalleri</a></li>
+                <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
+                <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
+                <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/about" data-index="Om oss">Om oss</a></li>
             </ul>
         </div>
         <div id="navbar-list-mobile" aria-label="untoggled">
             <ul>
-                <li class="nav-list"><a class="hover">Tidsbokning</a></li>
-                <li class="nav-list"><a class="hover">Tjänster</a></li>
-                <li class="nav-list"><a class="hover">Bildgalleri</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/services">Prislista</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/contact">Kontakta oss</a></li>
-                <li class="nav-list"><a class="hover" href="https://lashbeautyco.se/about">Om oss</a></li>
+            <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
+            <li class="nav-list"><a class="hover nav-link" data-index="Tjänster">Tjänster</a></li>
+            <li class="nav-list"><a class="hover nav-link" data-index="Bildgalleri">Bildgalleri</a></li>
+            <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
+            <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
+            <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/about" data-index="Om oss">Om oss</a></li>
             </ul>
         </div>
     </nav>
@@ -123,9 +125,7 @@ function loadFooter(){
                         </a>
                         <a class="social-media-link">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 1024 1024">
-                                <g>
-                                    <path fill="#FFFFFF" d="M1024,512C1024,229.2,794.8,0,512,0S0,229.2,0,512c0,255.6,187.2,467.4,432,505.8V660H302V512h130V399.2   C432,270.9,508.4,200,625.4,200c56,0,114.6,10,114.6,10v126h-64.6c-63.6,0-83.4,39.5-83.4,80v96h142l-22.7,148H592v357.8   C836.8,979.4,1024,767.6,1024,512z"/>
-                                </g>
+                            <path d="M1024,512C1024,229.2,794.8,0,512,0S0,229.2,0,512c0,255.6,187.2,467.4,432,505.8V660H302V512h130V399.2   C432,270.9,508.4,200,625.4,200c56,0,114.6,10,114.6,10v126h-64.6c-63.6,0-83.4,39.5-83.4,80v96h142l-22.7,148H592v357.8   C836.8,979.4,1024,767.6,1024,512z"/>
                             </svg>
                         </a>
                     </div>

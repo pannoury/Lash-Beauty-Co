@@ -49,18 +49,25 @@
 $brown: #ba7b62;
 $brown1: #cf8e74;
 $brown2: #b86747;
-$main0: #b068a8; //navbar & footer background color *Main Color*
-$main1: #d47fcb; //light main
+$main0: #d6cdc6; //navbar & footer background color *Main Color*
+$main1: #eee5de; //light main
 $main10: #d492ceb9;
 $main12: #f8c4f3;
-$main2: #94498b; //dark main
-$main20: #d492ceb9;
+$main2: #a3958b; //dark main
+$main20: #050505b9;
 $main22: #53275062;
-$main30: #261536;
-$main32: #4e2f6b;
+$main30: #b9b6b3;
+$main32: #a8a5a3;
 $text0: #fff; //light color text
 $text1: #000; //dark color text
 
+@mixin textColor($background) {
+    @if $background == light {
+        color: $text1;
+    } @else{
+        color: $text0;
+    }
+}
 
 body{
     padding: 0;

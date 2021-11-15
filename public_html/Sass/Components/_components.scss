@@ -12,19 +12,19 @@
             #navbar-list-desktop{
                 display: flex;
                 justify-content: center;
-                border-top: 1px solid rgba(255, 255, 255, 0.50);
+                border-top: 1px solid rgba(0, 0, 0, 0.5);
                 width: 100%;
                 ul{
                     display: flex;
                     margin-bottom: 0;
                     li{
-                        color: $text0;
+                        color: $text1;
                         &::after{
                             content: '';
                             display: block;
                             width: 0;
                             height: 2px;
-                            background: #fff;
+                            background: $text1;
                             transition: width .3s;
                         }
                         &:hover::after{
@@ -65,7 +65,7 @@
                 position: absolute;
                 left: 10%;
                 svg{
-                    fill: $text0;
+                    fill: $text1;
                 }
             }
         }
@@ -73,6 +73,7 @@
 }
 header{
     background-color: $main0;
+    color: $text1;
     nav{
         display: flex;
         align-items: center;
@@ -119,7 +120,7 @@ header{
                 list-style: none;
                 .nav-list{
                     text-transform: uppercase;
-                    color: $text0;
+                    color: $text1;
                     font-size: 30px;
                     &:not(:last-child){
                         margin-bottom: 20px;
@@ -136,7 +137,7 @@ footer{
     background-color: $main0;
     #footer{
         .footer-row{
-            color: $text0;
+            color: $text1;
             &:nth-child(1){
                 a{
                     width: 200px;
@@ -144,12 +145,12 @@ footer{
                     display: flex;
                     justify-content: flex-start;
                     svg{
-                        fill: $text0;
+                        fill: $text1;
                         .st1{
                             stroke-width:2;
                             stroke-miterlimit:10;
-                            fill: $text0;
-                            stroke: $text0;
+                            fill: $text1;
+                            stroke: $text1;
                         }
                     }
                 }
@@ -167,7 +168,7 @@ footer{
                         svg{
                             width: 25px;
                             height: 25px;
-                            fill: $text0;
+                            fill: $text1;
                         }
                     }
                 }
@@ -175,13 +176,13 @@ footer{
         }
     }
     .copyright{
-        border-top: 1px solid $text0;
+        border-top: 1px solid $text1;
         background-color: $main0;
         p{
             margin: 0;
             padding: 10px 0;
             text-align: center;
-            color: $text0;
+            color: $text1;
         }
     }
 }
@@ -234,7 +235,7 @@ footer{
                             align-items: center;
                             margin-bottom: 10px;
                             svg{
-                                fill: $text0;
+                                fill: $text1;
                                 margin-right: 6px;
                             }
                             &:hover{
@@ -279,7 +280,7 @@ footer{
                             font-size: 18px;
                             svg{
                                 margin-right: 10px;
-                                fill: $text0;
+                                fill: $text1;
                             }
                         }
                     }

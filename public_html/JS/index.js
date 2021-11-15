@@ -13,9 +13,25 @@ function loadPageSettings(){
     }
     else if(path === "/services" || path === "/public_html/services.html"){
         servicesFunctions();
+        var navList = document.querySelectorAll('[data-index="Prislista"]')
+        markNavList(navList);
+    }
+    else if(path === "/about" || path === "/public_html/about.html"){
+        var navList = document.querySelectorAll('[data-index="Om oss"]')
+        markNavList(navList);
+    }
+    else if(path === "/contact" || path === "/public_html/contact.html"){
+        var navList = document.querySelectorAll('[data-index="Kontakta oss"]')
+        markNavList(navList);
     }
     else{
         console.log("error")
+    }
+
+    function markNavList(array){
+        array.forEach(element => {
+            element.style.color = "#fff"
+        });
     }
 }
 //////////////////////////////////////////////////////////

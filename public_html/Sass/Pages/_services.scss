@@ -28,7 +28,7 @@
                     background-color: $main0;
                     text-transform: uppercase;
                     font-weight: bold;
-                    color: $text0;
+                    color: $text1;
                 }
             }
             .category{
@@ -38,7 +38,7 @@
                         span{
                             background-color: $main1;
                             svg{
-                                fill: $text0;
+                                fill: $text1;
                             }
                         }
                     }
@@ -46,7 +46,7 @@
                 &[aria-label="collapsed"]{
                     .category_header{
                         span{
-                            background-color: #d4d4d4;
+                            background-color: #f4f4f4;
                             svg{
                                 transform: rotate(180deg);
                             }
@@ -68,7 +68,7 @@
                         font-weight: bold;
                         font-size: 16px;
                         margin: 0;
-                        color: $text0;
+                        color: $text1;
                     }
                     span{
                         display: flex;
@@ -111,10 +111,8 @@
                                 font-size: 12px;
                                 border-radius: 8px;
                                 border: none;
-                                background-color: $main0;
                                 text-transform: uppercase;
                                 font-weight: bold;
-                                color: $text0;
                                 &:hover{
                                     cursor: pointer;
                                     background-color: $main2;
@@ -133,11 +131,11 @@
             flex-direction: column;
             .service-call-section{
                 &:nth-child(1){
-                    width: 100%;
+                    width: calc(100% - 20px);
                     height: 20vh;
                 }
                 &:nth-last-child(1){
-                    width: 100%;
+                    width: calc(100% - 20px);
                 }
             }
         }
@@ -157,7 +155,7 @@
                     background-color: $main0;
                     text-transform: uppercase;
                     font-weight: bold;
-                    color: $text0;
+                    color: $text1;
                 }
             }
             .category{
@@ -167,7 +165,7 @@
                         span{
                             background-color: $main1;
                             svg{
-                                fill: $text0
+                                fill: $text1;
                             }
                         }
                     }
@@ -175,7 +173,7 @@
                 &[aria-label="collapsed"]{
                     .category_header{
                         span{
-                            background-color: #d4d4d4;
+                            background-color: #f4f4f4;
                             svg{
                                 transform: rotate(180deg);
                             }
@@ -191,7 +189,7 @@
                     justify-content: space-between;
                     align-items: center;
                     background-color: $main0;
-                    color: $text0;
+                    color: $text1;
                     padding: 8px;
                     border-radius: 6px;
                     p{
@@ -240,8 +238,6 @@
                                 font-size: 12px;
                                 border-radius: 8px;
                                 border: none;
-                                background-color: $main0;
-                                color: $text0;
                                 text-transform: uppercase;
                                 font-weight: bold;
                                 &:hover{
@@ -271,7 +267,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                color: $text0;
+                color: $text1;
                 h1{
                     margin: 0 0 8px 0;
                     font-weight: 500;
@@ -290,4 +286,10 @@
             }
         }
     }
+}
+
+//color
+.book_btn{
+    background-color: $main0;
+    color: $text1;
 }
