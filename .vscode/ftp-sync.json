@@ -17,7 +17,8 @@
         "\\.vscode",
         "\\.git",
         "\\.DS_Store",
-        "\\.scss"
+        "\\.scss",
+        "\\.css.map"
     ],
     "generatedFiles": {
         "extensionsToInclude": [

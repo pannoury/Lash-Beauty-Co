@@ -5,8 +5,8 @@
             flex-direction: column;
             .navbar-logo{
                 #navbar_logo{
-                    width: 150px;
-                    height: 50px;
+                    width: 350px;
+                    height: 60px;
                 }
             }
             #navbar-list-desktop{
@@ -48,11 +48,13 @@
         nav{
             flex-direction: row;
             .navbar-logo{
-                margin-left: calc(50vw - 50px);
+                display: flex;
+                justify-content: center;
+                width: 100%;
                 z-index: 10;
                 #navbar_logo{
                     height: 50px;
-                    width: 100px;
+                    width: 250px;
                 }
             }
             #navbar-list-desktop{
@@ -63,7 +65,7 @@
             #nav-hamburger{
                 z-index: 10;
                 position: absolute;
-                left: 10%;
+                left: 5%;
                 svg{
                     fill: $text1;
                 }
@@ -202,6 +204,12 @@ footer{
                 display: flex;
                 flex-direction: column;
                 justify-items: flex-start;
+                a{
+                    img{
+                        width: 300px;
+                        height: 50px;
+                    }
+                }
                 &:nth-child(1){
                     width: 30%;
                     p{
@@ -265,9 +273,16 @@ footer{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
+                    justify-content: space-between;
                     margin-bottom: 20px;
                     p{
                         display: none;
+                    }
+                    a{
+                        img{
+                            width: 300px;
+                            height: 50px;
+                        }
                     }
                 }
                 .footer-row-content{

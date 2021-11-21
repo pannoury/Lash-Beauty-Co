@@ -4,6 +4,7 @@ window.onload = () =>{
     navbar.systemSettings();
     loadPageSettings();
 
+    /*
     $.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=IGQVJWLUJZAcHlmcE93dkJvdExabVl4aG9yczVqLWx4S3otVnY5X2Roc2xPSmV2bVFVdnZArVHcwSEFpR29XdVNlVXcwY294QUEwekttUlVMcXNXdmZADeUlQaTd4TGZAGYkVtR0hXdDZA2LWc2eXFTaFB6MgZDZD&count=8", function (result) {
         var html = "";
         for (var i = 0; i < result.data.length; i++) {
@@ -11,6 +12,7 @@ window.onload = () =>{
         }
         $("#insta-feed").html(html);
     });
+    */
 }
 
 function loadPageSettings(){
