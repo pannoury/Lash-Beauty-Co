@@ -70,8 +70,9 @@ function loadFooter(){
                 </a>
                 <div class="footer-row-content">
                     <p class="company-description">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                        Expedita itaque corporis sint est. Id amet consectetur quod quae repellat dolorem atque, repellendus consequatur necessitatibus sed esse vel ducimus magnam illo?
+                        Lash Beauty and Co’s vision är att erbjuda kunden en skräddarsydd, personlig och trygg upplevelse.
+                        Här involveras du som kund i processen till dina drömfransar och bryn!
+                        Produktkännedom, hållbarhet, teknik och kunskap är av största prioritet för oss. 
                     </p>
                     <div class="social-media">
                         <a class="social-media-link" href="https://www.instagram.com/lashbeautyandco/">
