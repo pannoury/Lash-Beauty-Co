@@ -3,16 +3,6 @@ import * as navbar from './Components/navbar.js';
 window.onload = () =>{
     navbar.systemSettings();
     loadPageSettings();
-
-    /*
-    $.get("https://api.instagram.com/v1/users/self/media/recent/?access_token=IGQVJWLUJZAcHlmcE93dkJvdExabVl4aG9yczVqLWx4S3otVnY5X2Roc2xPSmV2bVFVdnZArVHcwSEFpR29XdVNlVXcwY294QUEwekttUlVMcXNXdmZADeUlQaTd4TGZAGYkVtR0hXdDZA2LWc2eXFTaFB6MgZDZD&count=8", function (result) {
-        var html = "";
-        for (var i = 0; i < result.data.length; i++) {
-            html += "<div><img src='" + result.data[i].images.standard_resolution.url + "' /></div>";
-        }
-        $("#insta-feed").html(html);
-    });
-    */
 }
 
 function loadPageSettings(){

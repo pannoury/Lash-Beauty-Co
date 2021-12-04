@@ -7,7 +7,7 @@
             align-items: center;
             width: 80%;
             padding: 15px 10%;
-            color: $text1;
+            color: $text0;
             &:nth-child(1){
                 padding-top: 10px;
                 padding-bottom: 10px;
@@ -19,9 +19,14 @@
                 }
                 p{
                     margin-top: 6px;
+                    width: min(840px, 100%);
                 }
             }
             &:nth-child(2){
+                @media screen and (min-width: 1000px) and (max-width: 1150px){
+                    padding: 15px 5%;
+                    width: 90%;
+                }
                 .showcase-origin{
                     display: flex;
                     flex-direction: row;
@@ -49,10 +54,14 @@
                         &:nth-last-child(1){
                             position: relative;
                             z-index: 3;
-                            width: 60%;
+                            width: 100%;
                             background-color: $main2;
-                            padding: 10px 10px 10px 10%;
-                            margin-left: -10%;
+                            @media screen and (min-width: 1260px){
+                                padding: 10px 10px 10px 60px;
+                            }
+                            @media screen and (min-width: 1000px) and (max-width: 1260px){
+                                padding: 10px 10px 10px 100px;
+                            }
                             h4{
                                 font-size: 26px;
                                 font-weight: 500;
@@ -62,6 +71,20 @@
                             }
                             p{
                                 margin-top: 0;
+                                width: min(450px, 100%);
+                            }
+                            label{
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            ul{
+                                list-style-type: '-';
+                                padding-left: 10px;
+                                font-size: 16px;
+                                li{
+                                    padding-left: 10px;
+                                    margin: 6px 0;
+                                }
                             }
                         }
                     }
@@ -146,9 +169,13 @@
                             }
                         }
                         &:nth-last-child(1){
-                            color: $text1;
+                            color: $text0;
+                            background-color: $main2;
                             width: 80%;
-                            padding: 0 10%;
+                            padding: 10px 10%;
+                            margin-top: -10px;
+                            border-top-left-radius: 30px;
+                            border-bottom-right-radius: 30px;
                             h4{
                                 font-size: 26px;
                                 font-weight: 500;
@@ -158,6 +185,19 @@
                             }
                             p{
                                 margin-top: 0;
+                            }
+                            label{
+                                font-size: 20px;
+                                font-weight: 600;
+                            }
+                            ul{
+                                list-style-type: '-';
+                                padding-left: 10px;
+                                font-size: 16px;
+                                li{
+                                    padding-left: 10px;
+                                    margin: 6px 0;
+                                }
                             }
                         }
                     }

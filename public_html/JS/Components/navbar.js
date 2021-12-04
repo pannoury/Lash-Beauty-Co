@@ -99,7 +99,7 @@ function loadFooter(){
                 </div>
             </li>
             <li class="footer-row">
-                <h4>Navigation</h4>
+                <div class="container-separator"><h4><span class="footer">Navigation</span></h4></div>
                 <div class="footer-row-content">
                     <ul class="footer-navigate-list">
                         <li><a>Tidsbokning</a></li>
@@ -112,7 +112,7 @@ function loadFooter(){
                 </div>
             </li>
             <li class="footer-row">
-                <h4>Kontakta Oss</h4>
+            <div class="container-separator"><h4><span class="footer">Kontakta oss</span></h4></div>
                 <div class="footer-row-content">
                     <ul>
                         <li>

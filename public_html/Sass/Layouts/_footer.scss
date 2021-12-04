@@ -1,0 +1,175 @@
+footer{
+    background-color: $main0;
+    #footer{
+        .footer-row{
+            color: $text1;
+            &:nth-child(1){
+                a{
+                    width: 200px;
+                    height: 66px;
+                    display: flex;
+                    justify-content: flex-start;
+                    svg{
+                        fill: $text1;
+                        .st1{
+                            stroke-width:2;
+                            stroke-miterlimit:10;
+                            fill: $text1;
+                            stroke: $text1;
+                        }
+                    }
+                }
+            }
+            .footer-row-content{
+                .social-media{
+                    display: flex;
+                    flex-direction: row;
+                    .social-media-link{
+                        width: min-content;
+                        height: min-content;
+                        &:not(:nth-last-child(1)){
+                            margin-right: 10px;
+                        }
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                            fill: $text1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .copyright{
+        border-top: 1px solid $text1;
+        background-color: $main0;
+        p{
+            margin: 0;
+            padding: 10px 0;
+            text-align: center;
+            color: $text1;
+        }
+    }
+}
+@media(min-width:1000px){
+    footer{
+        #footer{
+            ul{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-around;
+                width: 90%;
+                margin: auto;
+                padding: 10px 0;
+            }
+            .footer-row{
+                display: flex;
+                flex-direction: column;
+                justify-items: flex-start;
+                a{
+                    img{
+                        width: 300px;
+                        height: 50px;
+                    }
+                }
+                &:nth-child(1){
+                    width: 30%;
+                    p{
+                        margin-top: 6px;
+                    }
+                }
+                &:nth-child(2){
+                    width: 20%;
+                }
+                &:nth-last-child(1){
+                    width: 30%;
+                }
+                h4{
+                    margin: 0 0 6px 0;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                }
+                .footer-row-content{
+                    .company-description{
+                        width: 80%;
+                    }
+                    ul{
+                        padding: 0;
+                        margin: 0;
+                        list-style-type: none;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            svg{
+                                fill: $text1;
+                                margin-right: 6px;
+                            }
+                            &:hover{
+                                opacity: 0.8;
+                                cursor: pointer;
+                            }
+                        }
+                        &.footer-navigate-list{
+                            text-transform: uppercase;
+                            li{
+                                margin-bottom: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width:1000px){
+    #footer{
+        padding: 10px;
+        ul{
+            list-style-type: none;
+            .footer-row{
+                &:nth-child(1){
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-bottom: 20px;
+                    p{
+                        display: none;
+                    }
+                    a{
+                        img{
+                            width: 300px;
+                            height: 50px;
+                        }
+                    }
+                }
+                .footer-row-content{
+                    ul{
+                        list-style-type: none;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            margin-bottom: 10px;
+                            font-size: 18px;
+                            svg{
+                                margin-right: 10px;
+                                fill: $text1;
+                            }
+                        }
+                    }
+                }
+                h4{
+                    text-transform: uppercase;
+                    font-size: 22px;
+                    font-weight: 500;
+                    margin: 6px 0;
+                }
+            }
+        }
+    }
+}

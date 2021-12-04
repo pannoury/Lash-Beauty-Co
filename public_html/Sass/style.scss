@@ -49,15 +49,15 @@
 $brown: #ba7b62;
 $brown1: #cf8e74;
 $brown2: #b86747;
-$main0: #d6cdc6; //navbar & footer background color *Main Color*
-$main1: #eee5de; //light main
+$main0: #a8a5a3; //navbar & footer background color *Main Color*
+$main1: #c0bebd; //light main
 $main10: #d492ceb9;
 $main12: #f8c4f3;
-$main2: #a3958b; //dark main
+$main2: #888888; //dark main
 $main20: #050505b9;
 $main22: #53275062;
-$main30: #b9b6b3;
-$main32: #a8a5a3;
+$main30: #8d8d8d;
+$main32: #7c7c7c;
 $text0: #fff; //light color text
 $text1: #000; //dark color text
 
@@ -98,4 +98,7 @@ main{
 }
 
 @import './Components/components';
+@import './Components/container-separator';
 @import './Pages/pages';
+@import './Layouts/navbar';
+@import './Layouts/footer';

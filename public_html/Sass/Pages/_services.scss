@@ -33,6 +33,7 @@
             }
             .category{
                 margin-bottom: 4px;
+                border-top: 1px solid $text1;
                 &[aria-label="extended"]{
                     .category_header{
                         span{
@@ -56,19 +57,22 @@
                         display: none;
                     }
                 }
+                &:nth-last-child(1){
+                    border-bottom: 1px solid $text1;
+                }
                 .category_header{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-                    background-color: $main0;
                     padding: 8px;
                     border-radius: 6px;
                     p{
-                        font-weight: bold;
+                        font-weight: 500;
                         font-size: 16px;
                         margin: 0;
                         color: $text1;
+                        text-transform: uppercase;
                     }
                     span{
                         display: flex;
@@ -160,6 +164,7 @@
             }
             .category{
                 margin-bottom: 4px;
+                border-top: 1px solid $text1;
                 &[aria-label="extended"]{
                     .category_header{
                         span{
@@ -183,19 +188,24 @@
                         display: none;
                     }
                 }
+                &:nth-last-child(1){
+                    border-bottom: 1px solid $text1;
+                }
                 .category_header{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
                     align-items: center;
-                    background-color: $main0;
+                    border-top: 1px solid $text0;
+                    border-bottom: 1px solid $text0;
                     color: $text1;
                     padding: 8px;
                     border-radius: 6px;
                     p{
-                        font-weight: bold;
+                        font-weight: 500;
                         font-size: 16px;
                         margin: 0;
+                        text-transform: uppercase;
                     }
                     span{
                         display: flex;
@@ -267,21 +277,27 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                color: $text1;
+                color: $text0;
                 h1{
                     margin: 0 0 8px 0;
                     font-weight: 500;
                     text-transform: uppercase;
                 }
                 p{
+                    font-size: 20px;
                     text-align: center;
                     width: 80%;
                 }
-                a{
-                    background-color: $main2;
+                .link-btn{
+                    background-color: $text1;
                     padding: 10px 26px;
                     border-radius: 3px;
                     text-transform: uppercase;
+                    transition: 500ms background-color ease;
+                    &:hover{
+                        background-color: $text0;
+                        color: $text1;
+                    }
                 }
             }
         }
