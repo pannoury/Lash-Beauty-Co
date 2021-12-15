@@ -163,7 +163,7 @@
                         button{
                             background-color: $main0;
                             font-size: 18px;
-                            color: $text1;
+                            color: $text0;
                             padding: 6px 22px;
                             border-radius: 3px;
                             border: none;
@@ -297,7 +297,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-items: center;
-                color: $text1;
+                color: $text0;
                 h4{
                     font-size: 28px;
                     font-weight: 500;
@@ -422,7 +422,7 @@
                 button{
                     background-color: $main0;
                     font-size: 18px;
-                    color: $text1;
+                    color: $text0;
                     padding: 6px 22px;
                     border-radius: 3px;
                     border: none;
@@ -438,12 +438,12 @@
         margin-top: 0;
         background-color: $main2;
         .call-to-action-index{
-            padding: 10px 0;
+            padding: 20px 0;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-items: center;
-            color: $text1;
+            color: $text0;
             h4{
                 font-size: 28px;
                 font-weight: 500;
@@ -454,12 +454,14 @@
                 font-weight: 300;
             }
             a{
-                background-color: $main1;
+                background-color: $text0;
                 padding: 10px 42px;
                 border-radius: 3px;
+                color: $text1;
                 &:hover{
                     cursor: pointer;
                     background-color: $main0;
+                    color: $text0;
                 }
             }
         }

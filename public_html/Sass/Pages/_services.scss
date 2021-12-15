@@ -11,122 +11,6 @@
                 }
             }
         }
-        #price-list-wrapper{
-            width: 95%;
-            max-width: 1200px;
-            margin: auto;
-            .price-list-header{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                button{
-                    padding: 14px 24px;
-                    font-size: 12px;
-                    border-radius: 8px;
-                    border: none;
-                    background-color: $main0;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: $text1;
-                }
-            }
-            .category{
-                margin-bottom: 4px;
-                border-top: 1px solid $text1;
-                &[aria-label="extended"]{
-                    .category_header{
-                        span{
-                            background-color: $main1;
-                            svg{
-                                fill: $text1;
-                            }
-                        }
-                    }
-                }
-                &[aria-label="collapsed"]{
-                    .category_header{
-                        span{
-                            background-color: #f4f4f4;
-                            svg{
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
-                    .category_extended_list{
-                        display: none;
-                    }
-                }
-                &:nth-last-child(1){
-                    border-bottom: 1px solid $text1;
-                }
-                .category_header{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    padding: 8px;
-                    border-radius: 6px;
-                    p{
-                        font-weight: 500;
-                        font-size: 16px;
-                        margin: 0;
-                        color: $text1;
-                        text-transform: uppercase;
-                    }
-                    span{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 4px;
-                        border-radius: 50%;
-                        svg{
-                            transition: 0.5s transform ease;
-                        }
-                    }
-                }
-                .category_extended_list{
-                    ul{
-                        list-style-type: none;
-                        li{
-                            border-top: 1px solid #d4d4d4;
-                            width: 95%;
-                            margin: auto;
-                            padding: 12px 0;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            align-items: center;
-                            &:nth-last-child(1){
-                                border-bottom: 1px solid #d4d4d4;
-                            }
-                            .service-description{
-                                display: flex;
-                                flex-direction: column;
-                                p{
-                                    margin: 4px 0;
-                                }
-                                .service-description-type1{
-                                    font-weight: 600;
-                                }
-                            }
-                            .book_btn{
-                                padding: 14px 24px;
-                                font-size: 12px;
-                                border-radius: 8px;
-                                border: none;
-                                text-transform: uppercase;
-                                font-weight: bold;
-                                &:hover{
-                                    cursor: pointer;
-                                    background-color: $main2;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 }
 @media(max-width:1000px){
@@ -140,123 +24,6 @@
                 }
                 &:nth-last-child(1){
                     width: calc(100% - 20px);
-                }
-            }
-        }
-        #price-list-wrapper{
-            width: 95vw;
-            margin: auto;
-            .price-list-header{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-                button{
-                    padding: 14px 24px;
-                    font-size: 12px;
-                    border-radius: 8px;
-                    border: none;
-                    background-color: $main0;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    color: $text1;
-                }
-            }
-            .category{
-                margin-bottom: 4px;
-                border-top: 1px solid $text1;
-                &[aria-label="extended"]{
-                    .category_header{
-                        span{
-                            background-color: $main1;
-                            svg{
-                                fill: $text1;
-                            }
-                        }
-                    }
-                }
-                &[aria-label="collapsed"]{
-                    .category_header{
-                        span{
-                            background-color: #f4f4f4;
-                            svg{
-                                transform: rotate(180deg);
-                            }
-                        }
-                    }
-                    .category_extended_list{
-                        display: none;
-                    }
-                }
-                &:nth-last-child(1){
-                    border-bottom: 1px solid $text1;
-                }
-                .category_header{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: center;
-                    border-top: 1px solid $text0;
-                    border-bottom: 1px solid $text0;
-                    color: $text1;
-                    padding: 8px;
-                    border-radius: 6px;
-                    p{
-                        font-weight: 500;
-                        font-size: 16px;
-                        margin: 0;
-                        text-transform: uppercase;
-                    }
-                    span{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        padding: 4px;
-                        border-radius: 50%;
-                        svg{
-                            transition: 0.5s transform ease;
-                        }
-                    }
-                }
-                .category_extended_list{
-                    ul{
-                        list-style-type: none;
-                        li{
-                            border-top: 1px solid #d4d4d4;
-                            width: 95%;
-                            margin: auto;
-                            padding: 12px 0;
-                            display: flex;
-                            flex-direction: row;
-                            justify-content: space-between;
-                            align-items: center;
-                            &:nth-last-child(1){
-                                border-bottom: 1px solid #d4d4d4;
-                            }
-                            .service-description{
-                                display: flex;
-                                flex-direction: column;
-                                p{
-                                    margin: 4px 0;
-                                }
-                                .service-description-type1{
-                                    font-weight: 600;
-                                }
-                            }
-                            .book_btn{
-                                padding: 14px 24px;
-                                font-size: 12px;
-                                border-radius: 8px;
-                                border: none;
-                                text-transform: uppercase;
-                                font-weight: bold;
-                                &:hover{
-                                    cursor: pointer;
-                                    background-color: $main2;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
@@ -308,4 +75,38 @@
 .book_btn{
     background-color: $main0;
     color: $text1;
+}
+
+#price-list-wrapper{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    @media screen and (min-width: 1000px) {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        .col{
+            width: calc(50% - 20px);
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width: 1000px){
+        display: flex;
+        flex-direction: column;
+        .col{
+            width: 100%;
+        }
+    }
+    .col{
+
+        .service-wrapper{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                font-size: 20px;
+            }
+        }
+    }
 }

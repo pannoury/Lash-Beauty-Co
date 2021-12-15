@@ -1,12 +1,19 @@
 .container-separator{
     position: relative;
     text-align: center;
+    &.black{
+        h4{
+            &::before{
+                border-top: 1px solid $text1;
+            }
+        }
+    }
     h4{
         &::before, &::after{
             box-sizing: border-box;
         }
         &::before{
-            border-top: 1px solid $text1;
+            border-top: 1px solid $text0;
             content: "";
             margin: 0 auto;
             position: absolute;

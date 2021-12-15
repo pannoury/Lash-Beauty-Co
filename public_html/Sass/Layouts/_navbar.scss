@@ -11,19 +11,20 @@
             #navbar-list-desktop{
                 display: flex;
                 justify-content: center;
-                border-top: 1px solid rgba(0, 0, 0, 0.5);
+                margin-top: 10px;
+                border-top: 1px solid rgba(255, 255, 255, 0.4);
                 width: 100%;
                 ul{
                     display: flex;
                     margin-bottom: 0;
                     li{
-                        color: $text1;
+                        color: $text0;
                         &::after{
                             content: '';
                             display: block;
                             width: 0;
                             height: 2px;
-                            background: $text1;
+                            background: $text0;
                             transition: width .3s;
                         }
                         &:hover::after{
@@ -66,7 +67,7 @@
                 position: absolute;
                 left: 5%;
                 svg{
-                    fill: $text1;
+                    fill: $text0;
                 }
             }
         }
@@ -100,7 +101,7 @@ header{
             left: 0%;
             height: 100vh;
             width: 0vw;
-            background-color: $text0;
+            background-color: $text1;
             white-space: nowrap;
             transition: 0.5s width ease-out;
             &[aria-label="untoggled"]{
@@ -122,13 +123,13 @@ header{
                 list-style: none;
                 .nav-list{
                     text-transform: uppercase;
-                    color: $text1;
+                    color: $text0;
                     font-size: 18px;
-                    border-top: 1px solid $text1;
+                    border-top: 1px solid $text0;
                     padding: 14px 0;
                     font-weight: 300;
                     &:nth-last-child(1){
-                        border-bottom: 1px solid $text1;
+                        border-bottom: 1px solid $text0;
                     }
                 }
             }
