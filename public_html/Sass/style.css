@@ -1138,9 +1138,29 @@ header nav #navbar-list-mobile ul .nav-list {
   border-top: 1px solid #fff;
   padding: 14px 0;
   font-weight: 300;
+  opacity: 0;
+  margin-left: -20px;
 }
 header nav #navbar-list-mobile ul .nav-list:nth-last-child(1) {
   border-bottom: 1px solid #fff;
+}
+@media screen and (max-width: 1000px) {
+  header nav #navbar-list-mobile ul .nav-list.fade {
+    -webkit-animation: navList 300ms linear forwards;
+            animation: navList 300ms linear forwards;
+  }
+  @-webkit-keyframes navList {
+    to {
+      opacity: 1;
+      margin-left: 0;
+    }
+  }
+  @keyframes navList {
+    to {
+      opacity: 1;
+      margin-left: 0;
+    }
+  }
 }
 
 footer {
