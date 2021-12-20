@@ -124,15 +124,11 @@ header{
                 .nav-list{
                     text-transform: uppercase;
                     color: $text0;
-                    font-size: 18px;
-                    border-top: 1px solid $text0;
+                    font-size: 22px;
                     padding: 14px 0;
                     font-weight: 300;
                     opacity: 0;
                     margin-left: -20px;
-                    &:nth-last-child(1){
-                        border-bottom: 1px solid $text0;
-                    }
                     @media screen and (max-width: 1000px){
                         &.fade{
                             animation: navList 300ms linear forwards;

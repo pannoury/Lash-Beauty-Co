@@ -467,3 +467,16 @@
         }
     }
 }
+.index-video{
+    video{
+        @media screen and (max-width: 900px){
+            height: 400px;
+            object-position: 10%;
+        }
+        @media screen and (min-width: 900px){
+            height: 600px;
+        }
+        width: 100%;
+        object-fit: cover;
+    }
+}

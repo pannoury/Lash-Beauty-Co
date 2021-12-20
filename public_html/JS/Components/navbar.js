@@ -56,8 +56,7 @@ function loadNavbar(){
         <div id="navbar-list-desktop">
             <ul>
                 <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
-                <li class="nav-list"><a class="hover nav-link" data-index="Tjänster">Tjänster</a></li>
-                <li class="nav-list"><a class="hover nav-link" data-index="Bildgalleri">Bildgalleri</a></li>
+                <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/galleri" data-index="Bildgalleri">Bildgalleri</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/about" data-index="Om oss">Om oss</a></li>
@@ -66,8 +65,7 @@ function loadNavbar(){
         <div id="navbar-list-mobile" aria-label="untoggled">
             <ul>
             <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
-            <li class="nav-list"><a class="hover nav-link" data-index="Tjänster">Tjänster</a></li>
-            <li class="nav-list"><a class="hover nav-link" data-index="Bildgalleri">Bildgalleri</a></li>
+            <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/galleri" data-index="Bildgalleri">Bildgalleri</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/about" data-index="Om oss">Om oss</a></li>
@@ -89,7 +87,7 @@ function loadFooter(){
                 </a>
                 <div class="footer-row-content">
                     <p class="company-description">
-                        Lash Beauty and Co’s vision är att erbjuda kunden en skräddarsydd, personlig och trygg upplevelse.
+                        Lash & Beauty's vision är att erbjuda kunden en skräddarsydd, personlig och trygg upplevelse.
                         Här involveras du som kund i processen till dina drömfransar och bryn!
                         Produktkännedom, hållbarhet, teknik och kunskap är av största prioritet för oss. 
                     </p>
@@ -122,8 +120,7 @@ function loadFooter(){
                 <div class="footer-row-content">
                     <ul class="footer-navigate-list">
                         <li><a>Tidsbokning</a></li>
-                        <li><a>Tjänster</a></li>
-                        <li><a>Bildgalleri</a></li>
+                        <li><a href="https://lashbeautyco.se/galleri">Bildgalleri</a></li>
                         <li><a href="https://lashbeautyco.se/services">Prislista</a></li>
                         <li><a>Kontakta oss</a></li>
                         <li><a>Om oss</a></li>
@@ -160,7 +157,11 @@ function loadFooter(){
         </ul>
     </div>
     <div class="copyright">
-        <p>© 2021 - Lash Beauty & Co</p>
+        <p>© 2021 - Lash & Beauty</p>
+    </div>
+    <div class="payment-footer">
+        <img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/white/klarna.svg">
+        <img src="https://lashbeautyco.se/Assets/Swish.svg" class="swish">
     </div>
     `
 }

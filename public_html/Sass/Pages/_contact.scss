@@ -2,14 +2,14 @@
     .contact-top-row{
         display: flex;
         justify-content: center;
-        background-color: $main1;
-        h3{
+        background-color: $main2;
+        h2{
             margin: 0;
             padding: 20px 0;
             text-align: center;
             width: 50%;
-            font-size: 24px;
-            font-weight: 600;
+            color: #fff;
+            font-weight: 500;
         }
     }
     .contact-wrapper{

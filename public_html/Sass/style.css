@@ -551,6 +551,24 @@ ul {
   color: #fff;
 }
 
+.index-video video {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 900px) {
+  .index-video video {
+    height: 400px;
+    -o-object-position: 10%;
+       object-position: 10%;
+  }
+}
+@media screen and (min-width: 900px) {
+  .index-video video {
+    height: 600px;
+  }
+}
+
 @media (min-width: 1000px) {
   #about {
     margin-bottom: 0;
@@ -804,6 +822,9 @@ ul {
   }
 }
 @media (min-width: 1000px) {
+  #services {
+    padding-bottom: 24vh;
+  }
   #services .service-call {
     flex-direction: row;
   }
@@ -825,6 +846,17 @@ ul {
   #services .service-call .service-call-section:nth-last-child(1) {
     width: calc(100% - 20px);
   }
+}
+#services {
+  background-color: #353535;
+}
+#services h2 {
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
 }
 #services .service-call {
   display: flex;
@@ -874,6 +906,8 @@ ul {
   width: 95%;
   max-width: 1200px;
   margin: auto;
+  color: #fff;
+  font-weight: 300;
 }
 @media screen and (min-width: 1000px) {
   #price-list-wrapper {
@@ -882,7 +916,8 @@ ul {
     align-items: flex-start;
   }
   #price-list-wrapper .col {
-    width: calc(50% - 20px);
+    width: min(80%, 800px);
+    margin: auto;
     padding: 10px;
   }
 }
@@ -900,6 +935,7 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 10px 0;
 }
 #price-list-wrapper .col .service-wrapper span {
   font-size: 20px;
@@ -908,15 +944,15 @@ ul {
 #contact .contact-top-row {
   display: flex;
   justify-content: center;
-  background-color: #c0bebd;
+  background-color: #353535;
 }
-#contact .contact-top-row h3 {
+#contact .contact-top-row h2 {
   margin: 0;
   padding: 20px 0;
   text-align: center;
   width: 50%;
-  font-size: 24px;
-  font-weight: 600;
+  color: #fff;
+  font-weight: 500;
 }
 #contact .contact-wrapper {
   width: 90%;
@@ -1011,6 +1047,75 @@ ul {
 }
 #contact .contact-wrapper .two-col-wrapper .col ul li a p {
   margin: 0;
+}
+
+.page-header {
+  background-color: #353535;
+  padding: 20px 0;
+}
+.page-header h2 {
+  text-align: center;
+  margin: 0;
+  color: #fff;
+  font-weight: 500;
+}
+
+.galleri-grid {
+  padding: 20px 0;
+}
+@media screen and (min-width: 645px) {
+  .galleri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    justify-items: center;
+    width: min(90%, 1000px);
+    margin: auto;
+  }
+}
+@media screen and (max-width: 830px) and (max-width: 830px) {
+  .galleri-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    width: 90%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 645px) {
+  .galleri-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.galleri-grid span {
+  font-size: 22px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.galleri-grid .galleri-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  width: calc(250px - 20px);
+  height: calc(250px - 20px);
+  padding: 10px;
+  transition: background-color 300ms ease;
+}
+.galleri-grid .galleri-box:hover {
+  background-color: #d4d4d4;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.galleri-grid .galleri-box figure img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (min-width: 1000px) {
@@ -1134,15 +1239,11 @@ header nav #navbar-list-mobile ul {
 header nav #navbar-list-mobile ul .nav-list {
   text-transform: uppercase;
   color: #fff;
-  font-size: 18px;
-  border-top: 1px solid #fff;
+  font-size: 22px;
   padding: 14px 0;
   font-weight: 300;
   opacity: 0;
   margin-left: -20px;
-}
-header nav #navbar-list-mobile ul .nav-list:nth-last-child(1) {
-  border-bottom: 1px solid #fff;
 }
 @media screen and (max-width: 1000px) {
   header nav #navbar-list-mobile ul .nav-list.fade {
@@ -1206,7 +1307,7 @@ footer #footer .footer-row .footer-row-content .social-media .social-media-link 
   fill: #fff;
 }
 footer .copyright {
-  width: 90%;
+  width: calc(100% - 20px);
   margin: 20px auto 0 auto;
   border-top: 1px solid #fff;
   background-color: #1a1919;
@@ -1330,4 +1431,16 @@ footer .copyright p {
     font-weight: 500;
     margin: 6px 0;
   }
+}
+.payment-footer {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.payment-footer img {
+  width: 45px;
+  height: 25px;
+  margin: 0 10px;
 }/*# sourceMappingURL=style.css.map */
