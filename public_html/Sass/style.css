@@ -275,6 +275,7 @@ ul {
     padding: 6px 22px;
     border-radius: 3px;
     border: none;
+    margin-top: auto;
   }
   #index .row .container-promotion .promotion-box .text-container button:hover {
     background-color: #353535;
