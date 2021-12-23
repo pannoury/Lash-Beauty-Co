@@ -1,6 +1,6 @@
 function systemSettings(){
-    loadNavbar();
-    loadFooter();
+    //loadNavbar();
+    //loadFooter();
 
     document.getElementById('nav-hamburger').addEventListener('click', function(){
         hamburgerEventListener()
