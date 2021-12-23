@@ -55,7 +55,7 @@ function loadNavbar(){
         </a>
         <div id="navbar-list-desktop">
             <ul>
-                <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
+                <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning" href="https://www.bokadirekt.se/places/lash-beauty-%26-co-35083">Tidsbokning</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/galleri" data-index="Bildgalleri">Bildgalleri</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
                 <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
@@ -64,7 +64,7 @@ function loadNavbar(){
         </div>
         <div id="navbar-list-mobile" aria-label="untoggled">
             <ul>
-            <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning">Tidsbokning</a></li>
+            <li class="nav-list"><a class="hover nav-link" data-index="Tidsbokning" href="https://www.bokadirekt.se/places/lash-beauty-%26-co-35083">Tidsbokning</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/galleri" data-index="Bildgalleri">Bildgalleri</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/services" data-index="Prislista">Prislista</a></li>
             <li class="nav-list"><a class="hover nav-link" href="https://lashbeautyco.se/contact" data-index="Kontakta oss">Kontakta oss</a></li>
@@ -119,11 +119,11 @@ function loadFooter(){
                 <div class="container-separator"><h4><span class="footer">Navigation</span></h4></div>
                 <div class="footer-row-content">
                     <ul class="footer-navigate-list">
-                        <li><a>Tidsbokning</a></li>
+                        <li><a href="https://www.bokadirekt.se/places/lash-beauty-%26-co-35083">Tidsbokning</a></li>
                         <li><a href="https://lashbeautyco.se/galleri">Bildgalleri</a></li>
                         <li><a href="https://lashbeautyco.se/services">Prislista</a></li>
-                        <li><a>Kontakta oss</a></li>
-                        <li><a>Om oss</a></li>
+                        <li><a href="https://lashbeautyco.se/contact">Kontakta oss</a></li>
+                        <li><a href="https://lashbeautyco.se/about">Om oss</a></li>
                     </ul>
                 </div>
             </li>
