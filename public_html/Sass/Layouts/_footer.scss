@@ -9,6 +9,7 @@ footer{
                     width: 200px;
                     height: 66px;
                     display: flex;
+                    align-items: center;
                     justify-content: flex-start;
                     svg{
                         fill: $text1;
@@ -187,9 +188,17 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    img{
+    img, figure{
         width: 45px;
         height: 25px;
         margin: 0 10px;
+    }
+    figure{
+        background-color: #fff;
+        border-radius: 4px;
+        img{
+            margin: 0;
+            object-fit: cover;
+        }
     }
 }

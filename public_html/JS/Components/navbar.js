@@ -51,7 +51,7 @@ function loadNavbar(){
     <nav>
         <a id="nav-hamburger" class="hover" aria-label="untoggled"><svg xmlns="http://www.w3.org/2000/svg" height="40px" width="40px" viewBox="0 0 24 24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 18h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zm0-5h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1s.45 1 1 1zM3 7c0 .55.45 1 1 1h16c.55 0 1-.45 1-1s-.45-1-1-1H4c-.55 0-1 .45-1 1z"/></svg></a>
         <a class="navbar-logo hover" href="https://lashbeautyco.se">
-            <img src="./Assets/logo-v2.svg" id="navbar_logo">
+            <img src="./Assets/logo_v3.svg" id="navbar_logo">
         </a>
         <div id="navbar-list-desktop">
             <ul>
@@ -83,7 +83,7 @@ function loadFooter(){
         <ul>
             <li class="footer-row">
                 <a href="https://lashbeautyco.se">
-                    <img src="./Assets/logo-v2.svg">
+                    <img src="./Assets/logo_v3.svg" id="navbar_logo">
                 </a>
                 <div class="footer-row-content">
                     <p class="company-description">
@@ -161,7 +161,9 @@ function loadFooter(){
     </div>
     <div class="payment-footer">
         <img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/white/klarna.svg">
-        <img src="https://lashbeautyco.se/Assets/Swish.svg" class="swish">
+        <figure class="swish">
+            <img src="https://lashbeautyco.se/Assets/Swish_black.svg">
+        </figure>
     </div>
     `
 }

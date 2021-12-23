@@ -1172,8 +1172,7 @@ ul {
     z-index: 10;
   }
   header nav .navbar-logo #navbar_logo {
-    height: 50px;
-    width: 250px;
+    height: 80px;
   }
   header nav #navbar-list-desktop ul {
     display: none;
@@ -1275,6 +1274,7 @@ footer #footer .footer-row:nth-child(1) a {
   width: 200px;
   height: 66px;
   display: flex;
+  align-items: center;
   justify-content: flex-start;
 }
 footer #footer .footer-row:nth-child(1) a svg {
@@ -1439,8 +1439,17 @@ footer .copyright p {
   align-items: center;
   justify-content: center;
 }
-.payment-footer img {
+.payment-footer img, .payment-footer figure {
   width: 45px;
   height: 25px;
   margin: 0 10px;
+}
+.payment-footer figure {
+  background-color: #fff;
+  border-radius: 4px;
+}
+.payment-footer figure img {
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=style.css.map */
