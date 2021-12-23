@@ -1123,7 +1123,6 @@ ul {
     flex-direction: column;
   }
   header nav .navbar-logo #navbar_logo {
-    width: 350px;
     height: 60px;
   }
   header nav #navbar-list-desktop {
@@ -1172,7 +1171,7 @@ ul {
     z-index: 10;
   }
   header nav .navbar-logo #navbar_logo {
-    height: 80px;
+    height: 50px;
   }
   header nav #navbar-list-desktop ul {
     display: none;
@@ -1276,15 +1275,6 @@ footer #footer .footer-row:nth-child(1) a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-}
-footer #footer .footer-row:nth-child(1) a svg {
-  fill: #000;
-}
-footer #footer .footer-row:nth-child(1) a svg .st1 {
-  stroke-width: 2;
-  stroke-miterlimit: 10;
-  fill: #000;
-  stroke: #000;
 }
 footer #footer .footer-row .footer-row-content .social-media {
   display: flex;

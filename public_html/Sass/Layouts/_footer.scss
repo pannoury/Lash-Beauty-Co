@@ -11,15 +11,6 @@ footer{
                     display: flex;
                     align-items: center;
                     justify-content: flex-start;
-                    svg{
-                        fill: $text1;
-                        .st1{
-                            stroke-width:2;
-                            stroke-miterlimit:10;
-                            fill: $text1;
-                            stroke: $text1;
-                        }
-                    }
                 }
             }
             .footer-row-content{
