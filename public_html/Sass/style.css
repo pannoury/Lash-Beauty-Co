@@ -1168,7 +1168,7 @@ ul {
   header nav .navbar-logo {
     display: flex;
     justify-content: center;
-    width: 100%;
+    margin: auto;
     z-index: 10;
   }
   header nav .navbar-logo #navbar_logo {
